@@ -1,0 +1,104 @@
+
+body {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-direction: column; 
+  align-items: center;
+  height: 90vh;
+  margin: 0;
+  
+  background-color: black;
+  font-family: Arial, sans-serif;
+}
+
+#high-score {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-gap: 20px;
+}
+
+.green-square, .red-square, .yellow-square, .blue-square {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+.green-square { background-color: green; }
+.red-square { background-color: #950606; }
+.yellow-square { background-color: #FFBF00; }
+.blue-square { background-color: #000080; }
+
+.start-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.start-button:hover {
+  background-color: #43a047;
+  transform: scale(1.05);
+}
+
+.start-button:active {
+  transform: scale(0.95);
+}
+
+@keyframes flash {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+.flash {
+  animation: flash 0.5s;
+}
+
+#message {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+#level-counter {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* space between counter & button */
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.game-title {
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 200px #ffffff, 0 0 200px #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Arial Black', Arial, sans-serif;
+  letter-spacing: 5px;
+}
+}
