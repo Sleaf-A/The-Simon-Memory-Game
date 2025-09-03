@@ -71,7 +71,7 @@ function nextRound() {
     highScoreDisplay.textContent = `High Score: ${highScore}`;
   }
 
-  if (level > 32) {
+  if (level > 20) {
     message.innerHTML = "You win!";
     startBtn.style.display = "inline-block";
     startBtn.textContent = "Continue";
