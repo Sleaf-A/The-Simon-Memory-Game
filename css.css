@@ -1,4 +1,5 @@
 
+
 body {
   display: flex;
   gap: 40px;
@@ -101,4 +102,12 @@ body {
   font-family: 'Arial Black', Arial, sans-serif;
   letter-spacing: 5px;
 }
+#instructions {
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
 }
